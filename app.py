@@ -11,7 +11,7 @@ if parent_dir not in sys.path:
     sys.path.append(parent_dir)
 
 # Your imports (Line 8)
-from src.player_manager import add_player, add_players_bulk, remove_player
+from .src.player_manager import add_player, add_players_bulk, remove_player
 
 """
 ⚽ Field Teams — Random Team Picker
