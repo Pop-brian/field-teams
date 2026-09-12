@@ -1,3 +1,12 @@
+import sys
+import os
+
+# Adds the current app directory to the Python path
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
+# Your original imports follow below
+from src.player_manager import add_player, add_players_bulk, remove_player, clear_players
+
 """
 ⚽ Field Teams — Random Team Picker
 Randomize. Divide. Play.
