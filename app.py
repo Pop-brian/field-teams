@@ -1,3 +1,18 @@
+import os
+import sys
+
+# Forces Python to look in both the current directory and its parent folder
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+
+if current_dir not in sys.path:
+    sys.path.append(current_dir)
+if parent_dir not in sys.path:
+    sys.path.append(parent_dir)
+
+# Your imports (Line 8)
+from src.player_manager import add_player, add_players_bulk, remove_player
+
 """
 ⚽ Field Teams — Random Team Picker
 Randomize. Divide. Play.
