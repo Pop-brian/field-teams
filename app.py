@@ -23,9 +23,9 @@ Run with:
 
 import streamlit as st
 
-from src.player_manager import add_player, add_players_bulk, remove_player, clear_players
-from src.team_generator import generate_teams, team_sizes_preview
-from src.sharing import generate_share_text, generate_all_players_text
+from player_manager import add_player, add_players_bulk, remove_player, clear_players
+from team_generator import generate_teams, team_sizes_preview
+from sharing import generate_share_text, generate_all_players_text
 
 
 # ----------------------------------------------------------------------
